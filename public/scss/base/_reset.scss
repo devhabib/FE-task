@@ -1,0 +1,40 @@
+// Box-sizing reset
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+// Remove margin and padding
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+// Set default font size and line height
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+// Other Reset
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+}

@@ -1,0 +1,19 @@
+// Import utils
+@import "utils/variables";
+@import "utils/mixins";
+
+// Import base styles
+@import "base/reset";
+@import "base/typography";
+
+// Import components
+@import "components/common";
+@import "components/buttons";
+@import "components/forms";
+
+// Import layout
+@import "layout/header";
+@import "layout/footer";
+
+// Import pages
+@import "pages/home";
