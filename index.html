@@ -2,13 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>EF Front End Task</title>
   </head>
   <body id="app">
     <!-- Start: HEADER -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="container_fluid">
+        <nav class="header__navbar">
+          <div class="header__navbar--logo">
+            <a href="#">
+              <img src="./public/img/logo.png" alt="EF TASK" />
+            </a>
+          </div>
+          <div class="header__navbar--menu">
+            <!-- Start: Header Top menu -->
+            <ul class="top__menu">
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">PC-Orders</a></li>
+              <li><a href="#">Upcoming</a></li>
+              <li><a href="#">Support 24/7</a></li>
+            </ul>
+            <!-- End: Header Top menu -->
+            <!-- Start: Search Menu -->
+            <div class="header__navbar--search">
+              <ul class="search__menu">
+                <li class="search__menu--single">
+                  <div class="dropdown__menu">
+                    <i class="fi fi-rr-computer"></i>
+                    <span> PC <i class="fi fi-rr-angle-small-down"></i> </span>
+                  </div>
+                </li>
+                <li class="search__menu--single">
+                  <div class="dropdown__menu">
+                    <img
+                      src="./public/img/playstation-logotype.png"
+                      alt="Playstation"
+                    />
+                    <span>
+                      Playstation <i class="fi fi-rr-angle-small-down"></i>
+                    </span>
+                  </div>
+                </li>
+                <li class="search__menu--single">
+                  <div class="dropdown__menu">
+                    <img
+                      src="./public/img/nintendo-switch.png"
+                      alt="Nintendo"
+                    />
+                    <span>
+                      Nintendo <i class="fi fi-rr-angle-small-down"></i>
+                    </span>
+                  </div>
+                </li>
+                <li class="search__menu--single">
+                  <div class="dropdown__menu">
+                    <img src="./public/img/xbox-logo.png" alt="Nintendo" />
+                    <span>
+                      Xbox <i class="fi fi-rr-angle-small-down"></i>
+                    </span>
+                  </div>
+                </li>
+                <li class="search__btn">
+                  <div class="search__btn--box">
+                    <i class="fi fi-rr-search"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- END: Search Menu -->
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- END: HEADER -->
     <script type="module" src="/main.js"></script>
   </body>
