@@ -32,11 +32,3 @@
         @content;
     }
 }
-
-// Flexbox mixin
-@mixin flexbox($justify: flex-start, $align: stretch, $direction: row) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
-}

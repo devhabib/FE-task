@@ -8,7 +8,7 @@
   <body id="app">
     <!-- Start: HEADER -->
     <header class="header">
-      <div class="container_fluid">
+      <div class="container__fluid">
         <nav class="header__navbar">
           <div class="header__navbar--logo">
             <a href="#">
@@ -32,6 +32,7 @@
                     <i class="fi fi-rr-computer"></i>
                     <span> PC <i class="fi fi-rr-angle-small-down"></i> </span>
                   </div>
+                  <div class="dropdown__box">This is for PC</div>
                 </li>
                 <li class="search__menu--single">
                   <div class="dropdown__menu">
@@ -43,6 +44,7 @@
                       Playstation <i class="fi fi-rr-angle-small-down"></i>
                     </span>
                   </div>
+                  <div class="dropdown__box">This is for Playstation</div>
                 </li>
                 <li class="search__menu--single">
                   <div class="dropdown__menu">
@@ -54,6 +56,7 @@
                       Nintendo <i class="fi fi-rr-angle-small-down"></i>
                     </span>
                   </div>
+                  <div class="dropdown__box">This is for Nintendo</div>
                 </li>
                 <li class="search__menu--single">
                   <div class="dropdown__menu">
@@ -62,20 +65,63 @@
                       Xbox <i class="fi fi-rr-angle-small-down"></i>
                     </span>
                   </div>
+                  <div class="dropdown__box">This is for Xbox</div>
                 </li>
                 <li class="search__btn">
-                  <div class="search__btn--box">
+                  <button class="search__btn--box">
                     <i class="fi fi-rr-search"></i>
-                  </div>
+                  </button>
                 </li>
               </ul>
+              <div class="search__input">
+                <input type="text" placeholder="Search" />
+                <span>Advanced Search</span>
+                <div class="search__input--cross">
+                  <i class="fi fi-rr-cross-small"></i>
+                </div>
+              </div>
             </div>
             <!-- END: Search Menu -->
+          </div>
+          <div class="header__navbar--user">
+            <ul>
+              <li>
+                <a href="#"><i class="fi fi-rr-shopping-cart-add"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fi fi-sr-user"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__mobile">
+            <button>
+              <i class="fi fi-rr-menu-burger"></i>
+            </button>
           </div>
         </nav>
       </div>
     </header>
     <!-- END: HEADER -->
+    <main>
+      <!-- START: Hero -->
+      <section class="hero">
+        <div class="container hero__wrapper">
+          <div class="hero__left">
+            <div class="hero__left--item">
+              <p class="tag">In 15 Days</p>
+              <h1 class="slogan">
+                Starfield Digital Premium Edition + Early Access
+              </h1>
+              <p class="price"><span> -25% </span>74.89&euro;</p>
+            </div>
+            <div class="hero__right">
+              <button class="secondary__btn">+ Early Access</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Hero -->
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
