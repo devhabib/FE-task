@@ -337,7 +337,9 @@
                     align-items: center;
                     &.active {
                         transform: scale(1);
-                        margin-top: 20px;
+                        @include tablet {
+                            margin-top: 20px;
+                        }
                     }
                     &--box {
                         position: relative;

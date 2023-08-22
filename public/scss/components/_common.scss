@@ -11,6 +11,12 @@
     left: 0;
     z-index: 10;
 }
+.h-100 {
+    height: 100%;
+}
+.ai__center {
+    align-items: center;
+}
 .container {
     max-width: 1320px;
     width: 100%;
@@ -37,14 +43,31 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
+    justify-content: center;
+    &* {
+        max-width: 100%;
+    }
 }
 
 .col {
     &__12 {
         width: 100%;
+        flex: 0 0 auto;
+        padding: 0 15px;
     }
     &__3 {
         width: 33.33%;
         flex-basis: 33.33%;
+        padding: 0 15px;
+        flex: 0 0 auto;
+        @include tablet {
+            width: 50%;
+            flex-basis: 50%;
+        }
+        @include mobile {
+            width: 100%;
+            flex-basis: 100%;
+        }
     }
 }
