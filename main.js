@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!event.target.closest(".search__menu--single")) {
       removeActiveClasses();
       headerMenu.classList.remove("active");
+      searchBox.classList.remove("active");
     }
   });
 
